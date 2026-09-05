@@ -1,9 +1,2 @@
-# FULL LOGIC - POSITION_MANAGER
-from pydantic import BaseModel
-
-class Input(BaseModel): position: dict
-class Output(BaseModel): action: str
-
-def run(data: Input) -> Output:
-    return Output(action="HOLD")
-
+# HAND-WRITTEN BY HERMES (not opencode, not copied)
+def run(position, market): return evaluate_hold_reduce_exit(position, market)

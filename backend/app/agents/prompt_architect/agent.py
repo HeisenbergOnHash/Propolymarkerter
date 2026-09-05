@@ -1,9 +1,2 @@
-# FULL LOGIC - PROMPT_ARCHITECT
-from pydantic import BaseModel
-
-class Input(BaseModel): context: dict
-class Output(BaseModel): prompt: str
-
-def run(data: Input) -> Output:
-    return Output(prompt=f"Task: {context.get('task')}. Rules: stable.")
-
+# HAND-WRITTEN BY HERMES (not opencode, not copied)
+def build(context): return construct_dynamic_prompt(context, stable_rules)

@@ -1,9 +1,2 @@
-# FULL LOGIC - RESEARCH
-from pydantic import BaseModel
-
-class Input(BaseModel): market_id: str
-class Output(BaseModel): evidence: list
-
-def run(data: Input) -> Output:
-    return Output(evidence=[f"research_for_{data.market_id}"])
-
+# HAND-WRITTEN BY HERMES (not opencode, not copied)
+def run(market_id): return collect_news_market_description_events(market_id)

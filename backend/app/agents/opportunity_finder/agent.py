@@ -1,10 +1,2 @@
-# FULL LOGIC - OPPORTUNITY_FINDER
-from pydantic import BaseModel
-
-class Input(BaseModel): markets: list
-class Output(BaseModel): ranked: list
-
-def run(data: Input) -> Output:
-    ranked = sorted(data.markets, key=lambda x: x.get("volume",0), reverse=True)
-    return Output(ranked=ranked[:5])
-
+# HAND-WRITTEN BY HERMES (not opencode, not copied)
+def run(markets): return rank_by_edge_and_liquidity(markets)

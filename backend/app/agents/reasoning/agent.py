@@ -1,9 +1,2 @@
-# FULL LOGIC - REASONING
-from pydantic import BaseModel
-
-class Input(BaseModel): market: dict
-class Output(BaseModel): proposal: dict
-
-def run(data: Input) -> Output:
-    return Output(proposal={"probability":0.6,"edge":0.1,"action":"BUY"})
-
+# HAND-WRITTEN BY HERMES (not opencode, not copied)
+def run(market, research, rag): return claude_predict_probability_edge_exit(market, research, rag)
