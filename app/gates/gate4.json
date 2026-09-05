@@ -1,0 +1,2 @@
+{"gate":4,"check":"production_verify","pipeline":"12_agents","dummy_gate":"enforced","token_store":"encrypted","wallet":"init_set","status":"TODO","production":"BLOCKED_until_all_gates_verified","contact":"telegram_for_real_blockers"}
+{"gate":4,"final":"verification_incomplete","real_config":"preserved","dummy_separated":"true","pipeline":"12_agents","status":"PASS_gates_1_3","BLOCKED":"production_until_gate_4_verified","TODO":"complete_gate_4_production_check","contact":"telegram_for_real_blocker_only"}
