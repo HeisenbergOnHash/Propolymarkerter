@@ -1,1 +1,3 @@
-# MARKET_SCANNER - contract placeholder
+from pydantic import BaseModel
+class market_scanner_Schema(BaseModel):
+    result: str
