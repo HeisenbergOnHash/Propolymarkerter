@@ -1,0 +1,1 @@
+# VERIFIER - contract placeholder
