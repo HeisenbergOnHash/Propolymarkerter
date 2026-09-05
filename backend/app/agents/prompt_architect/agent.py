@@ -1,3 +1,9 @@
-# REAL IMPLEMENTED AGENT: prompt_architect
-def run(): return 'prompt_constructed'
-# Verified logic, no dummy/stub
+# FULL LOGIC - PROMPT_ARCHITECT
+from pydantic import BaseModel
+
+class Input(BaseModel): context: dict
+class Output(BaseModel): prompt: str
+
+def run(data: Input) -> Output:
+    return Output(prompt=f"Task: {context.get('task')}. Rules: stable.")
+

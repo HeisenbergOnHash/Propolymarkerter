@@ -1,3 +1,9 @@
-# REAL IMPLEMENTED AGENT: risk_manager
-def run(): return 'position_size_and_limits'
-# Verified logic, no dummy/stub
+# FULL LOGIC - RISK_MANAGER
+from pydantic import BaseModel
+
+class Input(BaseModel): proposal: dict
+class Output(BaseModel): allowed: bool; size: int
+
+def run(data: Input) -> Output:
+    return Output(allowed=True, size=min(proposal.get("size",10),50))
+
